@@ -4,21 +4,19 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 import Skills from "./components/Skills/Skills";
-// import Contact from "./components/Contact/Contact";
 import "./App.css";
 import { FaCode, FaServer, FaTools, FaDatabase } from "react-icons/fa";
 
 function App() {
   return (
     <div className="min-h-screen bg-[#2C2E3D] text-white overflow-hidden">
-      <div>
         <Navbar
           logoText="Alex.dev"
           items={[
             { label: "Home", href: "#home" },
-            { label: "Projects", href: "#projects" },
             { label: "About", href: "#about" },
-            { label: "Contact", href: "#contact" },
+            { label: "Skills", href: "#skills" },
+            { label: "Projects", href: "#projects" },
           ]}
         />
         <Hero
@@ -26,7 +24,7 @@ function App() {
           title="Software Developer"
           description="I build scalable systems, dashboards, and developer-focused tools using
   React, TypeScript, and Node.js."
-          buttonText="View Projects"
+          buttonText="Download Resume"
         />
         <About />
         <Skills
@@ -56,28 +54,36 @@ function App() {
         <Projects
           projects={[
             {
+              image:"src/assets/background-finance.jpg",
               title: "Budget Tracker",
               description: "Dashboard with reporting and analytics",
               tech: ["React", "Node.js", "MongoDB"],
               impact: "Improved efficiency by 85%",
+              github: "https://github.com/RajeshNayak24/budget_tracker",
+              live: "https://budget-tracker-frontend-vhrh.onrender.com/",
             },
             {
+              image:"src/assets/background-admin.jpg",      
               title: "Admin Dashboard Tool",
               description: "Full-featured dashboard with CRUD operations",
               tech: ["React", "Node.js", "PostgreSQL"],
               impact: "Enabled real-time data management",
+              github: "https://github.com/RajeshNayak24/admin_dashboard",
+              live: "https://admin-dashboard.onrender.com/",
             },
             {
+              image:"src/assets/background-chat.jpg",
               title: "Real-Time Chat System",
               description: "Event-driven chat application",
               tech: ["Node.js", "WebSockets"],
               impact: "Handled real-time communication efficiently",
+              github: "https://github.com/RajeshNayak24/real-time-chat",
+              live: "https://real-time-chat.onrender.com/",
             },
           ]}
         />
-        {/* <Contact /> */}
         <Footer />
-      </div>
+      
     </div>
   );
 }
