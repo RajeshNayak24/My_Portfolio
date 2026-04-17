@@ -1,11 +1,17 @@
 import type { IconType } from "react-icons";
 
 export type SkillCategory = {
-  tag:IconType;
+  tag: IconType;
   title: string;
-  skills: string[];
-}
+  skills: {
+    name: string;
+    image: string ;
+    level: number; 
+    experience: string; 
+    note: string;
+  }[];
+};
 
 export type SkillProps = {
-    categories: SkillCategory[];
-}
+  categories: SkillCategory[];
+};
