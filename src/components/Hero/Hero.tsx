@@ -18,12 +18,20 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
             <h2 className="text-6xl font-bold text-[#FF77C9] mt-2">{title}</h2>
             <p className="text-gray-400 max-w-lg mt-4">{description}</p>
             <div className="flex gap-4 mt-6">
-              <button className="border-2 border-[#BF92FE] rounded-xl px-6 py-2 hover:bg-[#BF92FE] text-[#BF92FE] hover:text-black">
+              <a
+                href="/M_Rajesh_Nayak_Software_Developer_Resume.pdf" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-[#BF92FE] rounded-xl px-6 py-2 hover:bg-[#BF92FE] text-[#BF92FE] hover:text-black"
+              >
                 {buttonText}
-              </button>
-              <button className="border-2 border-[#BF92FE] rounded-xl px-6 py-2 hover:bg-[#BF92FE] text-[#BF92FE] hover:text-black">
+              </a>
+              <a
+                href="#contact"
+                className="border-2 border-[#BF92FE] rounded-xl px-6 py-2 hover:bg-[#BF92FE] text-[#BF92FE] hover:text-black"
+              >
                 Hire Me
-              </button>
+              </a>
             </div>
           </div>
 

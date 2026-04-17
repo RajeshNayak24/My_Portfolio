@@ -1,36 +1,59 @@
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
-    <footer className="w-full px-16 py-12 border-t border-purple-500/20 mt-20">
-      <div className="flex flex-col items-center text-center gap-6">
-        <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-          Rajesh.dev
-        </h3>
-        <p className="text-gray-400 max-w-md">
-          Building scalable systems and modern web applications with clean and
-          efficient code.
-        </p>
+    <footer className="w-full border-t border-purple-500/20 bg-[#0B132B] mt-20">
 
-        <div className="flex gap-6 text-xl">
-          <a href="#" className="text-gray-400 hover:text-pink-400 transition">
-            <FaInstagram />
-          </a>
+      <div className="max-w-7xl mx-auto px-6 md:px-16 py-5 flex flex-col md:flex-row justify-between gap-10">
 
-          <a href="#" className="text-gray-400 hover:text-pink-400 transition">
-            <FaLinkedin />
-          </a>
-
-          <a href="#" className="text-gray-400 hover:text-pink-400 transition">
-            <FaGithub />
-          </a>
+        <div>
+          <h3 className="text-xl font-bold text-white mb-2">
+            M Rajesh Nayak
+          </h3>
+          <p className="text-gray-400 text-sm max-w-sm">
+            Building scalable web applications and modern UI experiences using
+            React, TypeScript, and Node.js.
+          </p>
         </div>
 
-        <div className="w-full h-[1px] bg-purple-500/20"></div>
-        <p className="text-gray-500 text-sm">
-          © {new Date().getFullYear()} Rajesh Nayak. All rights reserved.
-        </p>
+        <div>
+          <h4 className="text-sm text-gray-300 mb-3 uppercase tracking-wider">
+            Connect
+          </h4>
+
+          <div className="flex gap-4 text-xl">
+            <a
+              href="https://github.com"
+              target="_blank"
+              className="text-gray-400 hover:text-pink-400 transition"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              className="text-gray-400 hover:text-pink-400 transition"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a
+              href="mailto:youremail@gmail.com"
+              className="text-gray-400 hover:text-pink-400 transition"
+            >
+              <FaEnvelope />
+            </a>
+          </div>
+        </div>
+
       </div>
+
+      <div className="text-center text-gray-500 text-sm pb-2">
+        © {new Date().getFullYear()} M Rajesh Nayak. All rights reserved.
+      </div>
+
     </footer>
   );
 };
