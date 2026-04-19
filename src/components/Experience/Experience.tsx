@@ -81,7 +81,7 @@ export default function Experience({ experiences }: ExperienceProps) {
                 ? "bg-purple-900 border-purple-400"
                 : "bg-pink-900 border-pink-400"
             }`} />
-            {/* Full width card in single-column mode */}
+            
             <div className="bg-[#0F172A] border border-purple-500/20 rounded-2xl p-5
               shadow-lg transition-all duration-300 hover:scale-[1.02]
               hover:shadow-[0_0_30px_rgba(255,119,201,0.4)]">

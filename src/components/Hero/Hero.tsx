@@ -1,6 +1,6 @@
 import type { HeroProps } from "./Hero.types";
 import { useState } from "react";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { PiDownloadSimpleBold } from "react-icons/pi";
 
 import profile from "../../assets/Profile.png";
@@ -27,7 +27,7 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
             <p className="text-gray-400 max-w-lg mt-4 opacity-0 animate-fadeUp animate-delay-3 text-justify">
               {description}
             </p>
-            <div className="flex gap-4 mt-6 opacity-0 animate-fadeUp animate-delay-3">
+            <div className="flex gap-4 mt-6 opacity-0 animate-fadeUp animate-delay-4">
               <button
                 onClick={() => setOpen(true)}
                 className="border-2 border-[#BF92FE] rounded-xl px-6 py-2 hover:bg-[#BF92FE] text-[#BF92FE] hover:text-black transition duration-300 
@@ -45,28 +45,30 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
             </div>
           </div>
 
-          <div className=" left-2 socialIcons flex flex-col gap-4 items-center w-fit ">
+          <div className=" left-2 socialIcons flex flex-col gap-4 items-center w-fit opacity-0 animate-fadeUp animate-delay-5 ">
             <div className="w-[3px] h-20 bg-[#BF92FE] opacity-80"></div>
             <a
-              href="https://github.com"
+              href="https://github.com/RajeshNayak24"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaGithub className="text-[#5f4db9] text-xl hover:text-pink-400 cursor-pointer" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/m-rajesh-nayak-17b6881a5/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedin className="text-[#5f4db9] text-xl hover:text-pink-400 cursor-pointer" />
             </a>
+
             <a
-              href="https://instagram.com"
+              href="mailto:mrajeshnayak.jobs@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-[#5f4db9] text-xl hover:text-pink-400 cursor-pointer"
             >
-              <FaInstagram className="text-[#5f4db9] text-xl hover:text-pink-400 cursor-pointer" />
+              <FaEnvelope />
             </a>
           </div>
         </div>

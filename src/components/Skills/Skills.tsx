@@ -58,8 +58,13 @@ const Skills = ({ categories }: SkillProps) => {
                 <div className="flex flex-wrap gap-4">
                   {category.skills.map((skill) => (
                     <div key={skill.name} className="relative group">
-                      <div className="flex items-center gap-2 px-4 py-2  hover:bg-white/10 transition cursor-pointer">
-                        <span className="flex flex-col items-center gap-2 text-xs">
+                      <div
+                        className="flex items-center gap-2 px-4 py-2 w-15 h-15 rounded-lg border border-purple-500/20
+                    bg-white/[0.03]  justify-center
+                    text-white/40 hover:text-pink-400 hover:border-pink-400/40
+                    hover:bg-pink-400/5 transition-all"
+                      >
+                        <span className="flex flex-col items-center gap-2 text-xs ">
                           <img
                             src={skill.image}
                             alt={skill.name}

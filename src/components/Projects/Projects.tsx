@@ -4,7 +4,8 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const Projects = ({ projects }: ProjectsProps) => {
   return (
     <section className="w-full scroll-mt-24  py-10 px-6 md:px-10" id="projects">
-      <div className=" p-5">
+      <div className=" p-5 relative">
+        <div className="absolute right-[-300px] bottom-[80px] w-[600px] h-[600px] bg-gradient-to-br from-[#605985] to-[#D17ACB] opacity-30 rounded-full blur-[80px] "></div>
         <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-16 bg-white/5 backdrop-blur-md">
           Projects
         </h2>
@@ -32,9 +33,12 @@ const Projects = ({ projects }: ProjectsProps) => {
                   {project.tech.map((t) => (
                     <li
                       key={t}
-                      className="px-2 py-3/4 text-xs hover:scale-100 transition"
+                      className="w-9 h-9 rounded-lg border border-purple-500/20
+                    bg-white/[0.03] flex items-center justify-center
+                    text-white/40 hover:text-pink-400 hover:border-pink-400/40
+                    hover:bg-pink-400/5 transition-all"
                     >
-                      <img src={t} alt="" className="w-8 h-8 " />
+                      <img src={t} alt="" className="w-5 h-5 " />
                     </li>
                   ))}
                 </ul>
@@ -46,7 +50,7 @@ const Projects = ({ projects }: ProjectsProps) => {
                     rel="noopener noreferrer"
                     className="text-gray-300 hover:text-pink-400 text-sm flex items-center gap-1"
                   >
-                    <FaGithub /> GitHub
+                    <FaGithub size={13} /> GitHub
                   </a>
                   {project.live ? (
                     <a
@@ -55,7 +59,7 @@ const Projects = ({ projects }: ProjectsProps) => {
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-pink-400 text-sm flex items-center gap-1"
                     >
-                      <FaExternalLinkAlt /> Live
+                      <FaExternalLinkAlt size={13} /> Live
                     </a>
                   ) : (
                     ""
