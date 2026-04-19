@@ -5,7 +5,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 import Skills from "./components/Skills/Skills";
 import "./App.css";
-import { FaCode, FaServer, FaTools, FaDatabase } from "react-icons/fa";
+import { FaCode, FaServer, FaTools, FaDatabase, FaCloud } from "react-icons/fa";
 import Experience from "./components/Experience/Experience";
 import reactLogo from "./assets/skills/react.png";
 import typescriptLogo from "./assets/skills/typescirpt.png";
@@ -19,6 +19,10 @@ import gitLogo from "./assets/skills/gitLogo.png";
 import dockerLogo from "./assets/skills/dockerLogo.png";
 import ciCDLogo from "./assets/skills/ciCdLogo.png";
 import ContactCTA from "./components/Contact/Contact";
+import OpenAiLogo from "./assets/skills/OpenAi.png";
+import budgetTracker from "./assets/background-finance.jpg";
+import pwdManager from "./assets/skills/PwdManager.png";
+import renewableEnergy from "./assets/renewableEnergy.png";
 
 function App() {
   return (
@@ -36,48 +40,82 @@ function App() {
       />
       <Hero
         name="M Rajesh Nayak"
-        title="Software Developer"
-        description="I build scalable systems, dashboards, and developer-focused tools using
-  React, TypeScript, and Node.js."
+        title="Full Stack Developer"
+        description="Full Stack Engineer with 3+ years building scalable APIs, 
+real-time systems, and data-driven dashboards. React · Node.js · TypeScript · 
+Python · AWS · GCP. Open to SWE, backend, data engineering, and cloud roles."
         buttonText="View Resume"
       />
       <About />
       <Experience
         experiences={[
           {
+            type: "work",
             role: "Full Stack Developer",
             company: "Community Dreams Foundation",
-            duration: "2024 - 2026",
-            description: [
-              "Built RESTful APIs enabling reliable and secure data exchange across systems",
-              "Refactored legacy code to improve application performance, scalability, and system reliability",
-              "Executed unit and integration testing to ensure high-quality, bug-free deployments",
-              "Documented system architecture, APIs, and workflows following SDLC standards",
+            duration: "Sep 2025 – April 2026",
+            year: "2026",
+            bullets: [
+              "Designed and built internal tools and admin dashboards using React and Node.js",
+              "Developed scalable backend APIs and data models using MongoDB and PostgreSQL",
+              "Implemented reusable components and modular architecture",
+              "Collaborated with cross-functional teams to deliver production-ready solutions",
             ],
-            tech: ["React", "TypeScript", "Node.js", "PostgreSQL"],
+            tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "MongoDB"],
           },
           {
+            type: "edu",
+            role: "Master of Science — Computer Science",
+            company: "Florida Atlantic University, Boca Raton FL",
+            duration: "2023 – 2025",
+            year: "2025",
+            bullets: [
+              "Software systems, data engineering & applied AI coursework",
+              "Full-stack and cloud infrastructure graduate projects",
+              "Google Cloud ACE + AWS certifications completed alongside studies",
+            ],
+            tech: ["Algorithms", "Cloud Computing", "System Design", "ML"],
+            gpa: "3.46 / 4.0",
+          },
+          {
+            type: "work",
             role: "Software Developer",
-            company: "DAZN- Sports Streaming platform",
-            duration: "2021 - 2023",
-            description: [
-              "Built scalable dashboard using React & TypeScript",
-              "Improved performance by 40%",
-              "Implemented validation and error handling mechanisms to ensure data integrity and application stability",
-              "Developed REST APIs using Node.js",
+            company: "DAZN — Sports Streaming Platform",
+            duration: "Oct 2021 – Aug 2023",
+            year: "2023",
+            bullets: [
+              "Developed high-performance frontend features using React and TypeScript",
+              "Reduced dashboard load time by 40% via code splitting and lazy loading",
+              "Built API-integrated systems supporting real-time data rendering",
+              "Participated in Agile sprints, code reviews, and cross-team delivery",
             ],
-            tech: ["React", "TypeScript", "Node.js", "Docker"],
+            tech: ["React", "TypeScript", "Node.js", "Docker", "REST APIs"],
           },
           {
-            role: "Data Analyst and Artificial Intelligence",
+            type: "work",
+            role: "Software Engineering Intern — Data & AI",
             company: "Wipro Pvt Ltd",
-            duration: "2020 - 2021",
-            description: [
-              "Developed data processing pipelines using Python and SQL",
-              " Performed data validation, testing, and transformation to ensure data accuracy",
-              "Supported debugging and troubleshooting of data workflows",
+            duration: "Mar 2020 – Aug 2021",
+            year: "2021",
+            bullets: [
+              "Built ETL pipelines and data-driven applications using Python and SQL",
+              "Developed dashboards supporting enterprise decision-making",
+              "Validated and transformed structured datasets at scale",
             ],
-            tech: ["Python", "SQL", "Hadoop"],
+            tech: ["Python", "SQL", "Hadoop", "ETL"],
+          },
+          {
+            type: "edu",
+            role: "B.Tech — Computer Science Engineering",
+            company: "B V Raju Institute of Technology",
+            duration: "2016 – 2022",
+            year: "2022",
+            bullets: [
+              "Core curriculum: DSA, algorithms, operating systems, and DBMS",
+              "Final year project in machine learning and data analysis",
+            ],
+            tech: ["C++", "Java", "DBMS", "Data Structures"],
+            gpa: "3.3 / 4.0",
           },
         ]}
       />
@@ -92,28 +130,28 @@ function App() {
                 image: reactLogo,
                 level: 8,
                 experience: "3+ years",
-                note: "Built scalable dashboards",
+                note: "Admin dashboards, real-time data rendering at DAZN",
               },
               {
                 name: "TypeScript",
                 image: typescriptLogo,
                 level: 9,
                 experience: "3+ years",
-                note: "Built scalable dashboards",
+                note: "Type-safe APIs and component systems, 3+ years prod use",
               },
               {
                 name: "JavaScript",
                 image: javascriptLogo,
                 level: 8,
                 experience: "3+ years",
-                note: "Built scalable dashboards",
+                note: "Core language across all frontend and Node work",
               },
               {
                 name: "HTML/CSS",
                 image: htmlcssLogo,
                 level: 9,
                 experience: "4+ years",
-                note: "Built scalable dashboards",
+                note: "Semantic markup, responsive layouts, component libraries",
               },
             ],
           },
@@ -126,14 +164,38 @@ function App() {
                 image: nodejsLogo,
                 level: 8,
                 experience: "4+ years",
-                note: "Built scalable dashboards",
+                note: "REST APIs, event-driven backends, Express services",
               },
               {
                 name: "Python",
                 image: pythonLogo,
                 level: 8,
                 experience: "3+ years",
-                note: "Built scalable dashboards",
+                note: "ETL pipelines, data validation, ML-adjacent tooling at Wipro",
+              },
+              {
+                name: "Java",
+                image:
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+                level: 7,
+                experience: "3+ years",
+                note: "OOP, SOLID principles, and design patterns",
+              },
+              {
+                name: "Next.js",
+                image:
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+                level: 7,
+                experience: "1+ years",
+                note: "Full-stack framework — used in Renewable Energy Dashboard with SSR and API routes",
+              },
+              {
+                name: "Express.js",
+                image:
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+                level: 8,
+                experience: "3+ years",
+                note: "Node.js framework for building REST APIs — core of all backend services",
               },
             ],
           },
@@ -146,14 +208,51 @@ function App() {
                 image: mongoDBLogo,
                 level: 8,
                 experience: "3+ years",
-                note: "Built scalable dashboards",
+                note: "NoSQL data modeling for internal tools and dashboards",
               },
               {
                 name: "PostgreSQL",
                 image: postgreSQLLogo,
                 level: 8,
                 experience: "3+ years",
-                note: "Built scalable dashboards",
+                note: "Relational schema design, query optimization",
+              },
+            ],
+          },
+          {
+            tag: FaCloud,
+            title: "Cloud & AI",
+            skills: [
+              {
+                name: "AWS",
+                image:
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+                level: 7,
+                experience: "1+ years",
+                note: "AWS Cloud Virtual Internship certified — EC2, S3, Lambda",
+              },
+              {
+                name: "Google Cloud",
+                image:
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+                level: 7,
+                experience: "1+ years",
+                note: "Associate Cloud Engineer certified — compute, storage, IAM",
+              },
+              {
+                name: "WebSockets",
+                image:
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+                level: 7,
+                experience: "2+ years",
+                note: "Built Real-Time Chat System with event-driven Socket.IO backend",
+              },
+              {
+                name: "OpenAI API",
+                image: OpenAiLogo,
+                level: 6,
+                experience: "1+ years",
+                note: "Integrated AI assistant in Renewable Energy Dashboard",
               },
             ],
           },
@@ -166,21 +265,29 @@ function App() {
                 image: gitLogo,
                 level: 9,
                 experience: "4+ years",
-                note: "Built scalable dashboards",
+                note: "PRs, branching strategy, code review workflows",
               },
               {
                 name: "Docker",
                 image: dockerLogo,
                 level: 8,
                 experience: "3+ years",
-                note: "Built scalable dashboards",
+                note: "Containerized deployments, dev environment parity",
               },
               {
                 name: "CI/CD",
                 image: ciCDLogo,
                 level: 8,
                 experience: "3+ years",
-                note: "Built scalable dashboards",
+                note: "Automated test and deploy pipelines",
+              },
+              {
+                name: "Agile / Scrum",
+                image:
+                  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+                level: 8,
+                experience: "3+ years",
+                note: "Sprint-based delivery and code reviews at DAZN and Community Dreams",
               },
             ],
           },
@@ -189,33 +296,46 @@ function App() {
       <Projects
         projects={[
           {
-            image: "src/assets/background-finance.jpg",
+            image: budgetTracker,
             title: "Budget Tracker",
             description: "Dashboard with reporting and analytics",
-            tech: ["React", "Node.js", "MongoDB"],
+            tech: [reactLogo, nodejsLogo, mongoDBLogo, dockerLogo],
             impact: "Improved efficiency by 85%",
             github: "https://github.com/RajeshNayak24/budget_tracker",
             live: "https://budget-tracker-frontend-vhrh.onrender.com/",
           },
           {
-            image: "src/assets/renewableEnergy.png",
+            image: renewableEnergy,
             title: "Renewable Energy Investment Dashboard",
             description:
               "Built a full-stack dashboard using Next.js to analyze energy investments with real-time EIA data and financial metrics (NPV, IRR, payback).",
-            tech: ["React", "Node.js", "OpenAI", "PostgreSQL"],
-            impact: "Enabled real-time data management",
+            tech: [reactLogo, nodejsLogo, OpenAiLogo, postgreSQLLogo],
+            impact: "Handled real-time data management",
             github:
               "https://github.com/RajeshNayak24/renewable-energy-dashboard",
             live: "https://renewable-energy-dashboard-sigma.vercel.app/",
           },
           {
-            image: "src/assets/background-chat.jpg",
+            image: "backgroundchat",
             title: "Real-Time Chat System",
             description: "Event-driven chat application",
-            tech: ["Node.js", "WebSockets"],
+            tech: [
+              nodejsLogo,
+              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+            ],
             impact: "Handled real-time communication efficiently",
             github: "https://github.com/RajeshNayak24/real-time-chat",
             live: "https://real-time-chat.onrender.com/",
+          },
+          {
+            image: pwdManager,
+            title: "Secure Password Manager",
+            description:
+              "Developed a secure password management system to store and retrieve sensitive user credentials with strong encryption and authentication mechanisms.",
+            tech: [reactLogo, nodejsLogo, mongoDBLogo, "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"],
+            impact:
+              "Improved data security by preventing unauthorized access and protecting sensitive user credentials",
+            github: "https://github.com/RajeshNayak24/Password-manager",
           },
         ]}
       />

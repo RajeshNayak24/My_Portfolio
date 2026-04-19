@@ -27,10 +27,10 @@ const Skills = ({ categories }: SkillProps) => {
           <button
             key={filter}
             onClick={() => setActiveFilter(filter)}
-            className={`px-5 py-2 rounded-xl border transition ${
+            className={`px-4 py-1.5 rounded-full text-sm border transition-all ${
               activeFilter === filter
-                ? "bg-white/10 border-white/20"
-                : "border-white/10 hover:bg-white/5"
+                ? "bg-white/10 text-white border-white/30"
+                : "text-white/50 border-white/10 hover:border-white/20"
             }`}
           >
             {filter.toUpperCase()}
@@ -69,7 +69,7 @@ const Skills = ({ categories }: SkillProps) => {
                         </span>
                       </div>
 
-                      <div className="absolute left-1/2 -translate-x-1/2 bottom-[120%] w-64 bg-[#0F172A] border border-white/10 rounded-xl p-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 pointer-events-none z-50">
+                      <div className="absolute left-20 -translate-x-1/2 bottom-[120%] w-64 bg-[#0F172A] border border-white/10 rounded-xl p-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 pointer-events-none z-50">
                         <p className="text-sm font-semibold text-white mb-1">
                           {skill.name}
                         </p>

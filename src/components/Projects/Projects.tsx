@@ -12,7 +12,9 @@ const Projects = ({ projects }: ProjectsProps) => {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-gradient-to-br from-[#1E293B]  to-[#0F172A] border border-purple-500/20 rounded-xl shadow-lg hover:scale-105 transition overflow-hidden flex flex-col"
+              className="bg-gradient-to-br from-[#1E293B]  to-[#0F172A] border border-purple-500/20 rounded-xl shadow-lg overflow-scroll flex flex-col  transition-all duration-300
+        hover:scale-[1.03]
+        hover:shadow-[0_0_30px_rgba(255,119,201,0.4)]"
             >
               <div className="w-full h-40 bg-gradient-to-br from-[#1E293B] to-[#0F172A]">
                 <img
@@ -21,7 +23,7 @@ const Projects = ({ projects }: ProjectsProps) => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="px-5 py-2 flex flex-row gap-3 md:flex-col">
+              <div className="px-5 py-2 flex flex-col gap-3 md:flex-col">
                 <h3 className="text-xl font-bold ">{project.title}</h3>
                 <p className="text-gray-400 text-sm">{project.description}</p>
                 <p className="text-green-400 text-xs">↑ {project.impact}</p>
@@ -30,9 +32,9 @@ const Projects = ({ projects }: ProjectsProps) => {
                   {project.tech.map((t) => (
                     <li
                       key={t}
-                      className="bg-purple-500/20 text-purple-300 rounded px-2 py-3/4 text-xs hover:scale-100 transition"
+                      className="px-2 py-3/4 text-xs hover:scale-100 transition"
                     >
-                      {t}
+                      <img src={t} alt="" className="w-8 h-8 " />
                     </li>
                   ))}
                 </ul>
@@ -46,15 +48,18 @@ const Projects = ({ projects }: ProjectsProps) => {
                   >
                     <FaGithub /> GitHub
                   </a>
-
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-pink-400 text-sm flex items-center gap-1"
-                  >
-                    <FaExternalLinkAlt /> Live
-                  </a>
+                  {project.live ? (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-pink-400 text-sm flex items-center gap-1"
+                    >
+                      <FaExternalLinkAlt /> Live
+                    </a>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
             </div>

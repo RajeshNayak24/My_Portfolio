@@ -7,7 +7,7 @@ export type Project = {
     tech: string[];
     impact: string;
     github: string;
-    live: string;
+    live?: string;
 }
 
 export type ProjectsProps = {
