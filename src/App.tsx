@@ -298,9 +298,11 @@ Python · AWS · GCP. Open to SWE, backend, data engineering, and cloud roles."
           {
             image: budgetTracker,
             title: "Budget Tracker",
-            description: "Dashboard with reporting and analytics",
-            tech: [reactLogo, nodejsLogo, mongoDBLogo, dockerLogo],
-            impact: "Improved efficiency by 85%",
+            description:
+              "Full-stack expense management app with analytics, reporting, and a production-ready CI/CD deployment pipeline.",
+            tech: [reactLogo, nodejsLogo, mongoDBLogo, dockerLogo, ciCDLogo],
+            impact:
+              "Implemented CI/CD, versioned deployments, and staging environment to enable safe releases and reduce manual deployment effort.",
             github: "https://github.com/RajeshNayak24/budget_tracker",
             live: "https://budget-tracker-frontend-vhrh.onrender.com/",
           },
@@ -332,7 +334,12 @@ Python · AWS · GCP. Open to SWE, backend, data engineering, and cloud roles."
             title: "Secure Password Manager",
             description:
               "Developed a secure password management system to store and retrieve sensitive user credentials with strong encryption and authentication mechanisms.",
-            tech: [reactLogo, nodejsLogo, mongoDBLogo, "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"],
+            tech: [
+              reactLogo,
+              nodejsLogo,
+              mongoDBLogo,
+              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+            ],
             impact:
               "Improved data security by preventing unauthorized access and protecting sensitive user credentials",
             github: "https://github.com/RajeshNayak24/Password-manager",
