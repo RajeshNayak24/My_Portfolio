@@ -14,7 +14,7 @@ const About = () => {
         <div className="flex-1">
           <img
             className="w-full max-w-2xl mx-auto  "
-            src="src/assets/aboutme.png"
+            src="src/assets/aboutme1.png"
             alt=""
           />
         </div>
