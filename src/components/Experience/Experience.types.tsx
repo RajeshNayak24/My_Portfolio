@@ -1,9 +1,12 @@
 export type ExperienceItem = {
+  type: string;
   role: string;
   company: string;
   duration: string;
-  description: string[];
+  year: string;
+  bullets: string[];
   tech: string[];
+  gpa?: string;
 };
 
 export type ExperienceProps = {

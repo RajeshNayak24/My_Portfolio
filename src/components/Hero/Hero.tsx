@@ -1,8 +1,12 @@
 import type { HeroProps } from "./Hero.types";
+import { useState } from "react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { PiDownloadSimpleBold } from "react-icons/pi";
+
 import profile from "../../assets/Profile.png";
 
 const Hero = ({ name, title, description, buttonText }: HeroProps) => {
+  const [open, setOpen] = useState(false);
   return (
     <section id="home" className="pt-[80px]">
       <div className="relative main-container min-h-[100vh] flex flex-col md:flex-row gap-8 p-5 items-center">
@@ -11,24 +15,30 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
 
         <div className="left flex flex-1 flex-col justify gap-8 p-4">
           <div className="left-1 flex flex-1 flex-col">
-            <h1 className="text-5xl font-bold mb-2 ">Hi,</h1>
-            <h1 className="text-5xl font-bold leading-tight">
+            <h1 className="text-5xl font-bold mb-2 opacity-0 animate-fadeUp">
+              Hi,
+            </h1>
+            <h1 className="text-5xl font-bold leading-tight opacity-0 animate-fadeUp animate-delay-1">
               I'm <span>{name},</span>
             </h1>
-            <h2 className="text-6xl font-bold text-[#FF77C9] mt-2">{title}</h2>
-            <p className="text-gray-400 max-w-lg mt-4">{description}</p>
-            <div className="flex gap-4 mt-6">
-              <a
-                href="/M_Rajesh_Nayak_Software_Developer_Resume.pdf" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-[#BF92FE] rounded-xl px-6 py-2 hover:bg-[#BF92FE] text-[#BF92FE] hover:text-black"
+            <h2 className="text-6xl font-bold text-[#FF77C9] mt-2 opacity-0 animate-fadeUp animate-delay-2">
+              {title}
+            </h2>
+            <p className="text-gray-400 max-w-lg mt-4 opacity-0 animate-fadeUp animate-delay-3 text-justify">
+              {description}
+            </p>
+            <div className="flex gap-4 mt-6 opacity-0 animate-fadeUp animate-delay-3">
+              <button
+                onClick={() => setOpen(true)}
+                className="border-2 border-[#BF92FE] rounded-xl px-6 py-2 hover:bg-[#BF92FE] text-[#BF92FE] hover:text-black transition duration-300 
+    hover:scale-105 active:scale-95"
               >
                 {buttonText}
-              </a>
+              </button>
               <a
                 href="#contact"
-                className="border-2 border-[#BF92FE] rounded-xl px-6 py-2 hover:bg-[#BF92FE] text-[#BF92FE] hover:text-black"
+                className="border-2 border-[#BF92FE] rounded-xl px-6 py-2 hover:bg-[#BF92FE] text-[#BF92FE] hover:text-black transition duration-300 
+    hover:scale-105 active:scale-95"
               >
                 Hire Me
               </a>
@@ -80,6 +90,44 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
           <div className="absolute right-[10px] bottom-[60px] w-0 h-0 border-l-[15px] md:border-l-[20px] border-l-transparent border-b-[25px] md:border-b-[30px] border-b-purple-400 border-r-[15px] md:border-r-[20px] border-r-transparent opacity-60"></div>
         </div>
       </div>
+
+      {open && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div
+            className="absolute inset-0 bg-black/70 backdrop-blur-md transition-opacity duration-300"
+            onClick={() => setOpen(false)}
+          ></div>
+
+          <div className="relative w-[95%] md:w-[85%] h-[85%] bg-[#0F172A]/90 backdrop-blur-xl rounded-2xl border border-purple-500/20 shadow-[0_0_40px_rgba(168,85,247,0.3)] overflow-hidden animate-modalFade">
+            <div className="flex justify-between items-center px-6 py-4 border-b border-white/10">
+              <h3 className="text-white font-semibold text-lg">My Resume</h3>
+
+              <div className="flex items-center gap-4">
+                <a
+                  href="/M_Rajesh_Nayak_Software_Developer_Resume.pdf"
+                  download
+                  className="text-2xl px-4 py-2 rounded-full bg-purple-500/20 text-purple-300 hover:bg-purple-500/40 transition flex items-center gap-2"
+                >
+                  <PiDownloadSimpleBold />
+                </a>
+
+                <button
+                  onClick={() => setOpen(false)}
+                  className="text-xl text-gray-300 hover:text-pink-400 transition"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+
+            <iframe
+              src="/M_Rajesh_Nayak_Software_Developer_Resume.pdf#toolbar=0"
+              title="Resume"
+              className="w-full h-[calc(100%-60px)]"
+            ></iframe>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

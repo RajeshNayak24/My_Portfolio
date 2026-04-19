@@ -1,15 +1,15 @@
 import type { NavbarProps } from "./Navbar.types";
-import logo from "../../assets/code.png";
+// import logo from "../../assets/code.png";
 import { useState } from "react";
 
 const Navbar = ({ items }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full h-[80px] text-white fixed top-0 left-0 z-50 bg-[#2C2E3D]/80 backdrop-blur-sm border-b border-purple-500/20 ">
+    <nav className="w-full h-[60px] text-white fixed top-0 left-0 z-50 bg-[#2C2E3D]/80 backdrop-blur-sm border-b border-purple-500/20 ">
       <div className="flex  justify-between items-center px-8 py-4 lg:flex-row">
         <div className="flex  items-center gap-2 font-bold text-xl">
-          <img className="w-10 h-10 rounded-full" src={logo} alt="profile" />
+          
           <span>
             R<span className="text-[#FF77C9]">A</span>JESH
           </span>
