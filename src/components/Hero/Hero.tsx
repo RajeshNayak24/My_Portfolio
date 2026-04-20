@@ -2,7 +2,6 @@ import type { HeroProps } from "./Hero.types";
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { PiDownloadSimpleBold } from "react-icons/pi";
-
 import profile from "../../assets/Profile.png";
 
 const Hero = ({ name, title, description, buttonText }: HeroProps) => {
