@@ -1,3 +1,5 @@
+import AboutMe from "../../assets/aboutme1.png";
+
 const About = () => {
   return (
     <section
@@ -12,11 +14,7 @@ const About = () => {
         <div className="absolute left-[-300px] bottom-[80px] w-[600px] h-[600px] bg-gradient-to-br from-[#605985] to-[#D17ACB] opacity-30 rounded-full blur-[80px] "></div>
 
         <div className="flex-1">
-          <img
-            className="w-full max-w-2xl mx-auto  "
-            src="src/assets/aboutme1.png"
-            alt=""
-          />
+          <img className="w-full max-w-2xl mx-auto" src={AboutMe} alt="" />
         </div>
 
         <div className="flex-1 px-10 md:px-0">
