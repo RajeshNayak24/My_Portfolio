@@ -74,7 +74,7 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
         <div className="right relative flex-1 w-full h-[400px] md:h-auto flex items-center justify-center">
           <img
             className=" w-[280px] md:w-[800px] relative md:absolute md:top-[-350px] md:left-[-50px] z-10 object-contain"
-            src="/profile.png"
+            src="/Profile.png"
             alt="profile"
           />
           <div className="absolute top-[20px] right-[40px] w-[150px] md:w-[200px] h-[100px] bg-[#1E293B] rounded-xl opacity-80 blur-[1px]"></div>
