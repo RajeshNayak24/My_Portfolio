@@ -2,7 +2,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactCTA = () => {
   return (
-    <section id="contact" className="w-full px-6 md:px-16 mt-24">
+    <section id="contact" className="w-full py-20 px-6">
 
       <div className="relative bg-gradient-to-br from-[#1E1B4B] to-[#0F172A] border border-purple-500/20 rounded-3xl p-10 overflow-hidden">
 

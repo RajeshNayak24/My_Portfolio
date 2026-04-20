@@ -3,7 +3,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = ({ projects }: ProjectsProps) => {
   return (
-    <section className="w-full scroll-mt-24  py-10 px-6 md:px-10" id="projects">
+    <section className="w-full py-10 px-6 md:px-10" id="projects">
       <div className=" p-5 relative">
         <div className="absolute right-[-300px] bottom-[80px] w-[600px] h-[600px] bg-gradient-to-br from-[#605985] to-[#D17ACB] opacity-30 rounded-full blur-[80px] "></div>
         <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-16 bg-white/5 backdrop-blur-md">

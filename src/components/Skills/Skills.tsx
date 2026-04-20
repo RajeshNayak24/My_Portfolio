@@ -9,7 +9,7 @@ const Skills = ({ categories }: SkillProps) => {
   console.log(Tags);
 
   return (
-    <section id="skills" className="scroll-mt-24 w-full py-16 px-6 md:px-16">
+    <section id="skills" className="w-full py-16 px-6 md:px-16">
       <div className="mb-12">
         <p className="text-purple-300 uppercase tracking-widest text-sm">
           WHAT I KNOW
@@ -38,7 +38,7 @@ const Skills = ({ categories }: SkillProps) => {
         ))}
       </div>
 
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-5">
         {categories
           .filter(
             (cat) =>
@@ -59,7 +59,7 @@ const Skills = ({ categories }: SkillProps) => {
                   {category.skills.map((skill) => (
                     <div key={skill.name} className="relative group">
                       <div
-                        className="flex items-center gap-2 px-4 py-2 w-15 h-15 rounded-lg border border-purple-500/20
+                        className="flex items-center gap-2 px-2 py-2 w-13 h-13 rounded-lg border border-purple-500/20
                     bg-white/[0.03]  justify-center
                     text-white/40 hover:text-pink-400 hover:border-pink-400/40
                     hover:bg-pink-400/5 transition-all"
@@ -68,13 +68,13 @@ const Skills = ({ categories }: SkillProps) => {
                           <img
                             src={skill.image}
                             alt={skill.name}
-                            className="w-10 h-10"
+                            className="w-8 h-8"
                           />
                           {skill.name}
                         </span>
                       </div>
 
-                      <div className="absolute left-20 -translate-x-1/2 bottom-[120%] w-64 bg-[#0F172A] border border-white/10 rounded-xl p-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 pointer-events-none z-50">
+                      <div className="absolute left-20 -translate-x-1/2 bottom-[120%] w-55 md:w-64 bg-[#0F172A] border border-white/10 rounded-xl p-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 pointer-events-none z-50">
                         <p className="text-sm font-semibold text-white mb-1">
                           {skill.name}
                         </p>

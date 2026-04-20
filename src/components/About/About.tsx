@@ -4,11 +4,8 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full py-10 px-6 md:px-10 bg-[#0F172A]
-        border border-purple-500/20
-         p-6
-        shadow-lg
-        transition-all duration-300 "
+      className="w-full py-20 px-6 bg-[#0F172A]
+        border border-purple-500/20 shadow-lg transition-all duration-300"
     >
       <div className="relative flex flex-col md:flex-row items-center gap-12">
         <div className="absolute left-[-300px] bottom-[80px] w-[600px] h-[600px] bg-gradient-to-br from-[#605985] to-[#D17ACB] opacity-30 rounded-full blur-[80px] "></div>
