@@ -22,8 +22,14 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
             <h2 className="text-6xl font-bold text-[#FF77C9] mt-2 opacity-0 animate-fadeUp animate-delay-2">
               {title}
             </h2>
-            <p className="text-gray-400 max-w-lg mt-4 opacity-0 animate-fadeUp animate-delay-3 text-justify">
+            <p className="text-gray-400 max-w-xl leading-relaxed animate-fadeUp animate-delay-3">
               {description}
+              <br />
+              <span className="text-gray-300">
+                React • Node.js • TypeScript • AWS • GCP
+              </span>
+              <br />
+              Open to Software Engineering, Backend, and Data-focused roles.
             </p>
             <div className="flex gap-4 mt-6 opacity-0 animate-fadeUp animate-delay-4">
               <button
@@ -38,7 +44,7 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
                 className="border-2 border-[#BF92FE] rounded-xl px-6 py-2 hover:bg-[#BF92FE] text-[#BF92FE] hover:text-black transition duration-300 
     hover:scale-105 active:scale-95"
               >
-                Hire Me
+                Let’s Connect
               </a>
             </div>
           </div>
@@ -77,6 +83,8 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
             src="/Profile.png"
             alt="profile"
           />
+          <div className="absolute top-10 right-100 w-12 h-12 bg-purple-500/30 rounded-lg blur-sm"></div>
+          <div className="absolute bottom-10 left-10 w-8 h-8 bg-pink-500/40 rounded-md"></div>
           <div className="absolute top-[20px] right-[40px] w-[150px] md:w-[200px] h-[100px] bg-[#1E293B] rounded-xl opacity-80 blur-[1px]"></div>
 
           <div className="absolute top-[120px] right-[10px] w-[140px] md:w-[180px] h-[90px] bg-white/5 rounded-xl backdrop-blur-sm"></div>

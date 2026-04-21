@@ -41,9 +41,7 @@ function App() {
       <Hero
         name="M Rajesh Nayak"
         title="Full Stack Developer"
-        description="Full Stack Engineer with 3+ years building scalable APIs, 
-real-time systems, and data-driven dashboards. React · Node.js · TypeScript · 
-Python · AWS · GCP. Open to SWE, backend, data engineering, and cloud roles."
+        description=" Full Stack Engineer with 3+ years building scalable APIs and real-time systems."
         buttonText="View Resume"
       />
       <About />
