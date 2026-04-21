@@ -108,7 +108,7 @@ Python · AWS · GCP. Open to SWE, backend, data engineering, and cloud roles."
             type: "edu",
             role: "B.Tech — Computer Science Engineering",
             company: "B V Raju Institute of Technology",
-            duration: "2016 – 2022",
+            duration: "2018 – 2022",
             year: "2022",
             bullets: [
               "Core curriculum: DSA, algorithms, operating systems, and DBMS",
@@ -318,18 +318,6 @@ Python · AWS · GCP. Open to SWE, backend, data engineering, and cloud roles."
             live: "https://renewable-energy-dashboard-sigma.vercel.app/",
           },
           {
-            image: "backgroundchat",
-            title: "Real-Time Chat System",
-            description: "Event-driven chat application",
-            tech: [
-              nodejsLogo,
-              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
-            ],
-            impact: "Handled real-time communication efficiently",
-            github: "https://github.com/RajeshNayak24/real-time-chat",
-            live: "https://real-time-chat.onrender.com/",
-          },
-          {
             image: pwdManager,
             title: "Secure Password Manager",
             description:
@@ -343,6 +331,18 @@ Python · AWS · GCP. Open to SWE, backend, data engineering, and cloud roles."
             impact:
               "Improved data security by preventing unauthorized access and protecting sensitive user credentials",
             github: "https://github.com/RajeshNayak24/Password-manager",
+          },
+          {
+            image: "backgroundchat",
+            title: "Real-Time Chat System",
+            description: "Event-driven chat application",
+            tech: [
+              nodejsLogo,
+              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+            ],
+            impact: "Handled real-time communication efficiently",
+            github: "https://github.com/RajeshNayak24/real-time-chat",
+            live: "https://real-time-chat.onrender.com/",
           },
         ]}
       />

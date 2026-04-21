@@ -6,7 +6,7 @@ export default function Card({ entry }: { entry: ExperienceProps["experiences"][
     <div
       className="bg-[#0F172A] border border-purple-500/20 rounded-2xl p-5
         shadow-lg transition-all duration-300 hover:scale-[1.02]
-        hover:shadow-[0_0_30px_rgba(255,119,201,0.4)] w-full max-w-[280px]"
+        hover:shadow-[0_0_30px_rgba(255,119,201,0.4)] w-full max-w-[480px]"
     >
       <div className="flex justify-between items-start gap-2 mb-2">
         <p className="text-white font-medium text-sm leading-snug">{entry.role}</p>

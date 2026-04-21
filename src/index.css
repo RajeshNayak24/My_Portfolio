@@ -54,3 +54,21 @@
 .animate-delay-5 {
   animation-delay: 1.0s;
 }
+
+@keyframes floatIcon {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float-icon {
+  animation: floatIcon 3s ease-in-out infinite;
+}

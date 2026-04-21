@@ -14,7 +14,7 @@ export default function Experience({ experiences }: ExperienceProps) {
   const useAlternating = filter === "all";
 
   return (
-    <section id="experience" className="py-20 px-6 max-w-4xl mx-auto">
+    <section id="experience" className="py-20 px-6 max-w-6xl mx-auto">
       <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400
         bg-clip-text text-transparent mb-10 text-center">
         Experience & Education
