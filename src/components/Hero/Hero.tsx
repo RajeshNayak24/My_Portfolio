@@ -112,7 +112,7 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
 
               <div className="flex items-center gap-4">
                 <a
-                  href="/M_Rajesh_Nayak_Software_Developer_Resume.pdf"
+                  href="/Rajesh_Nayak_Full_Stack_Developer_Resume.pdf"
                   download
                   className="text-2xl px-4 py-2 rounded-full bg-purple-500/20 text-purple-300 hover:bg-purple-500/40 transition flex items-center gap-2"
                 >
@@ -129,7 +129,7 @@ const Hero = ({ name, title, description, buttonText }: HeroProps) => {
             </div>
 
             <iframe
-              src="/M_Rajesh_Nayak_Software_Developer_Resume.pdf#toolbar=0"
+              src="/Rajesh_Nayak_Full_Stack_Developer_Resume.pdf#toolbar=0"
               title="Resume"
               className="w-full h-[calc(100%-60px)]"
             ></iframe>

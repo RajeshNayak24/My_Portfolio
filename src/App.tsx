@@ -23,6 +23,9 @@ import OpenAiLogo from "./assets/skills/OpenAi.png";
 import budgetTracker from "./assets/background-finance.jpg";
 import pwdManager from "./assets/skills/PwdManager.png";
 import renewableEnergy from "./assets/renewableEnergy.png";
+import chathub from "./assets/chathub_thumbnail.svg";
+import flask from "./assets/skills/flask.png";
+import taskmanagement from './assets/taskmanagement.png'
 
 function App() {
   return (
@@ -91,9 +94,9 @@ function App() {
           },
           {
             type: "work",
-            role: "Software Engineering Intern — Data & AI",
+            role: "Data Analytics & Artificial Intelligence",
             company: "Wipro Pvt Ltd",
-            duration: "Mar 2020 – Aug 2021",
+            duration: "Mar 2020 – Oct 2021",
             year: "2021",
             bullets: [
               "Built ETL pipelines and data-driven applications using Python and SQL",
@@ -112,7 +115,7 @@ function App() {
               "Core curriculum: DSA, algorithms, operating systems, and DBMS",
               "Final year project in machine learning and data analysis",
             ],
-            tech: ["C++", "Java", "DBMS", "Data Structures"],
+            tech: ["c", "C++", "Python", "Java", "DBMS", "Data Structures"],
             gpa: "3.3 / 4.0",
           },
         ]}
@@ -331,16 +334,38 @@ function App() {
             github: "https://github.com/RajeshNayak24/Password-manager",
           },
           {
-            image: "backgroundchat",
-            title: "Real-Time Chat System",
-            description: "Event-driven chat application",
+            image: chathub,
+            title: "ChatHub- Real-Time Chat System",
+            description:
+              "A real-time chat platform built with React and FastAPI, enabling seamless messaging using WebSockets and scalable backend architecture.",
             tech: [
-              nodejsLogo,
+              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
               "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
             ],
-            impact: "Handled real-time communication efficiently",
-            github: "https://github.com/RajeshNayak24/real-time-chat",
-            live: "https://real-time-chat.onrender.com/",
+            impact:
+              "Demonstrates ability to build real-time systems with low latency and scalable communication pipelines. Showcases full-stack expertise in handling live data, system design, and production-ready architecture.",
+            github:
+              "https://github.com/RajeshNayak24/ChatHub-real-time-chat-system",
+            // live: "https://real-time-chat.onrender.com/",
+          },
+          {
+            image: taskmanagement,
+            title: "Task Management App",
+            description:
+              "A full-stack task management application built with React, Flask, and MongoDB, enabling users to create, track, and manage tasks with a clean and responsive UI. Designed with RESTful APIs and efficient state handling for smooth user experience.",
+            tech: [
+              reactLogo,
+              mongoDBLogo,
+              pythonLogo,
+              flask,
+              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+            ],
+            impact:
+              "Demonstrates strong full-stack development skills including API design, database integration, and frontend state management.",
+            github: "https://github.com/RajeshNayak24/task-management-app",
           },
         ]}
       />
